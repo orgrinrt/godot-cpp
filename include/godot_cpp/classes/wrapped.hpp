@@ -303,7 +303,7 @@ public:                                                                         
 		___binding_create_callback,                                                                                                                                                    \
 		___binding_free_callback,                                                                                                                                                      \
 		___binding_reference_callback,                                                                                                                                                 \
-	};
+	}
 
 // Don't use this for your classes, use GDCLASS() instead.
 #define GDEXTENSION_CLASS(m_class, m_inherits)                                                                           \
