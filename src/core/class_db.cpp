@@ -324,6 +324,7 @@ void ClassDB::bind_virtual_method(const StringName &p_class, const StringName &p
 	ERR_FAIL_COND_MSG(type.virtual_methods.find(p_method) != type.virtual_methods.end(), String("Virtual '{0}::{1}()' method already registered.").format(Array::make(p_class, p_method)));
 
 	type.virtual_methods[p_method] = p_call;
+	WARN_PRINT(String("Virtual method '{0}::{1}()' registered.").format(Array::make(type.name, p_method)));
 }
 
 void ClassDB::initialize_class(const ClassInfo &p_cl) {
